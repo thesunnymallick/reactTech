@@ -1,0 +1,49 @@
+@import "variable.scss";
+
+.footer{
+    background-color:  black;
+    height: 15rem;
+    width: 100%;
+    bottom: 0%;
+    padding: 2rem;
+    >div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2{
+                color: $first;
+                font-weight: 800;
+                 text-transform: uppercase;
+            }
+            p{
+                color:$first;
+                margin: 0.5rem;
+      
+            }
+
+            a{
+                margin: 0.5rem;
+                color: $first;
+            }
+         
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .footer{
+        height: 100vh;
+        div{
+            justify-content: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
+    }
+}
